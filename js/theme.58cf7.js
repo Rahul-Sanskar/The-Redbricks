@@ -92,3 +92,23 @@ jQuery(document).ready(function () {
     return false;
   });
 });
+
+(function () {
+  function addCallCta() {
+    if (!document.body || document.querySelector('.rb-call-cta')) return;
+
+    const callCta = document.createElement('a');
+    callCta.className = 'rb-call-cta';
+    callCta.href = 'tel:+919987432055';
+    callCta.setAttribute('aria-label', 'Call to know more at +91 99874 32055');
+    callCta.innerHTML = '<span class="rb-call-cta__icon" aria-hidden="true">&#9742;</span><span class="rb-call-cta__copy"><span class="rb-call-cta__label">Call to Know More</span><span class="rb-call-cta__number">+91 99874 32055</span></span>';
+    document.body.appendChild(callCta);
+    document.body.classList.add('rb-call-cta-visible');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addCallCta, { once: true });
+  } else {
+    addCallCta();
+  }
+})();
