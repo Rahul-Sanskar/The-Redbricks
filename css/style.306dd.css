@@ -1587,3 +1587,151 @@ select {
     right: 12px;
   }
 }
+
+:root {
+  --rb-ink: #2d2927;
+  --rb-muted: #625b58;
+  --rb-border: #e8e1de;
+  --rb-paper: #fffdfa;
+  --rb-brand: #84251f;
+  --rb-brand-deep: #56301b;
+}
+
+html {
+  overflow-x: clip !important;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  color: var(--rb-ink);
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-x: clip !important;
+}
+
+p {
+  color: var(--rb-muted);
+  line-height: 1.75;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #b65f52;
+  outline-offset: 3px;
+}
+
+.elementor .elementor-heading-title {
+  text-wrap: balance;
+}
+
+.directorist-single-listing-header {
+  margin-bottom: 28px;
+}
+
+.directorist-single-listing-header .directorist-listing-details__listing-title {
+  color: var(--rb-ink);
+  font-family: "Outfit", sans-serif;
+  font-size: 38px;
+  font-weight: 650;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.directorist-single-listing-header .directorist-listing-details {
+  color: var(--rb-muted);
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-card {
+  background: var(--rb-paper);
+  border: 1px solid var(--rb-border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(55, 34, 29, .055);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-card .directorist-card__header {
+  background: #faf6f3;
+  border-bottom: 1px solid var(--rb-border);
+  padding: 16px 22px;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-card .directorist-card__header__title {
+  align-items: center;
+  color: var(--rb-ink);
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  gap: 10px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-card .directorist-card__header-icon {
+  color: var(--rb-brand);
+  flex: 0 0 auto;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-card .directorist-card__body {
+  padding: 22px;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-card .directorist-details-info-wrap {
+  color: var(--rb-muted);
+  line-height: 1.7;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-listing-details__text p:last-child,
+.directorist-content-active .directorist-single-contents-area .directorist-listing-details__text ul:last-child {
+  margin-bottom: 0;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-single-info__label__text {
+  color: var(--rb-ink);
+  font-weight: 600;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-single-info__label-icon {
+  color: var(--rb-brand);
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-single-map,
+.directorist-content-active .directorist-single-contents-area .directorist-single-listing-slider .swiper-slide img {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.directorist-content-active .directorist-single-contents-area .directorist-related-listing-header__title {
+  color: var(--rb-ink);
+  font-family: "Outfit", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 64px;
+  }
+
+  .directorist-single-listing-header .directorist-listing-details__listing-title {
+    font-size: 30px;
+  }
+
+  .directorist-content-active .directorist-single-contents-area .directorist-card .directorist-card__header {
+    padding: 14px 16px;
+  }
+
+  .directorist-content-active .directorist-single-contents-area .directorist-card .directorist-card__body {
+    padding: 18px 16px;
+  }
+
+  .directorist-content-active .directorist-single-contents-area .directorist-related-listing-header__title {
+    font-size: 24px;
+  }
+}
